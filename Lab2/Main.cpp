@@ -50,8 +50,6 @@ int main()
 				delete[] * i;
 			delete[] arr;
 			cout << "Press Backspace to back in menu.";
-			in.close();
-			out.close();
 			while (_getch() != 8) cout << "\a"; }
 			break;
 		default:
@@ -62,5 +60,7 @@ int main()
 			break;
 		}
 	} while (choice);
+	in.close();
+	out.close();
 	return 0;
 }
